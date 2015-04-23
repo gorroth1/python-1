@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+import colors as c
+ 
+name = input(c.pink + "What is your name?" + c.reset)  
+print (c.green + 'How is ' + c.blue + 'it going ' + name)
+                                                                                                                                                
+
