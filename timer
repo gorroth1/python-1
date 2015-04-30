@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+import colors as c
 import time
 seconds = 1000000
 while True:
     seconds = seconds - 1
-    print(str(seconds) + ' seconds')
+    print(c.blue +  str(seconds) + c.red + ' seconds')
     time.sleep(1)
