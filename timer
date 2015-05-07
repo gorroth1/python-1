@@ -1,5 +1,15 @@
-#/usr/bin/env python3
+#!/usr/bin/env python3
+import time
+import colors as c
+"""
+Welcome to Gabe's amazing Timer, enjoy!
+"""
 
-second = second + 1
+h = 1
+print(c.clear) 
 while True:
-  print (second + 1)
+    time.sleep(0.01)
+    print (c.clear)
+    print(c.magenta + '[Control-C to stop]' + c.reset, end=': ')
+    h += 100
+    print(h)
