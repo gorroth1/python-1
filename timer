@@ -4,12 +4,44 @@ import colors as c
 """
 Welcome to Gabe's amazing Timer, enjoy!
 """
-
-h = 1
+weeks = 0
+dayz = 0
+hours = 0
+minutes = 0
+seconds = 0
+hundredths = 0
 print(c.clear) 
-while True:
-    time.sleep(0.01)
-    print (c.clear)
-    print(c.magenta + '[Control-C to stop]' + c.reset, end=': ')
-    h += 100
-    print(h)
+try:
+    while True:
+        time.sleep(0.01)
+        print (c.clear)
+        print('{} weeks {} dayz :{}:{}:{}.{}'.format(weeks,dayz,hours,minutes,seconds,hundredths))   
+        print(c.blue + "Hundredths")
+        print(hundredths)
+        hundredths += 1
+        print(c.green + "Seconds:")
+        print(seconds)
+        print(c.pink + 'Minutes')
+        print(minutes)
+        print(c.yellow + 'Hours')
+        print(hours)
+        print(c.red + 'Dayz')
+        print(dayz)
+        print(c.grey + 'Weeks')
+        print(weeks)     
+        if hundredths == 100:
+            seconds = 1 + seconds
+            hundredths = 0 
+        if seconds == 60:
+            minutes = 1 + minutes
+            seconds = 0
+        if minutes == 60:
+            hours = 1 + hours
+            minutes = 0
+        if hours == 60:
+            dayz = 1 + dayz
+            hours = 0
+        if dayz == 7:
+            weeks = 1 + weeks
+            dayz = 0
+        
