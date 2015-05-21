@@ -43,5 +43,4 @@ try:
             hours = 0
         if dayz == 7:
             weeks = 1 + weeks
-            dayz = 0
-accept       
+            dayz = 0    
