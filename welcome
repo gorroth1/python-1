@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+# python-1
+ 
+import colors as c
+
+print ('My skilstak python class')

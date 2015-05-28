@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+import colors as c
+print('welcome to the magic eight ball')
+ 
+print('Put in your question for the future')
+
+import random 
+answers = [
+c.yellow +'No' + c.reset,
+c.red + 'Yes' + c.reset,
+c.green + 'Of course' + c.reset,
+c.blue + 'I have no idea' + c.reset,
+c.pink + 'Maybe' + c.reset,
+c.pink + 'Yes grasshopper, yes' + c.reset,
+c.blue + 'No but Biance is' + c.reset,
+c.red + "Yes no maybe so, California 80's yo" + c.reset,
+    'My senses say no',
+    'My senses say yes',
+    'Maybe bruh',
+    'Like, totally, like, yeah',
+    'I have no idea',
+    'To be honest yes',
+    'To be honest no',
+    'Why would you even ask me that?',
+    'No, but I know pie',
+    "I can't answer that. I'm out of memory.",
+    "You don't wannt to know",
+    "Really bruh?"
+]
+while True :
+    question = input(':] ' + c.yellow)
+    if question == 'bye' or question == 'goodbye':
+        print('Goodbye')
+        exit()
+    elif 'love' in question:
+        print("Do I look like the guy from I'm Sexy and I know it to you?")
+    elif 'die' in question or 'death' in question or 'dead' in question:
+        print("You dead bruh?")
+    else:
+        answer = random.choice(answers)    
+        print(c.random_color() + answer + c.reset)
+

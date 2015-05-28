@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+ 
+import colors as c
+
+while True :
+  print(c.yellow + 'Boots ' + c.green + 'and ' + c.red + 'cats')
+
+
+
+  
+                            
+                                  
+
