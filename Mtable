@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+c.clear_screen()
+print(c.yellow + 'Bruh, ' + c.blue + 'What would you like to multiply today?')
+print(c.green + 'Ask me a number!!')
+number = input ('>')
+print('Table for {}:'.format(number))
+
+for m in range(12,0,-1):
+    product = int(number) * m
+    form = '{} x {} = {}'
+    print(form.format(number,m,product))
+
