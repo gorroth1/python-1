@@ -44,3 +44,5 @@ try:
         if dayz == 7:
             weeks = 1 + weeks
             dayz = 0    
+except KeyboardInterrupt:
+    exit()
