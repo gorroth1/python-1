@@ -2,6 +2,8 @@
 
 import colors as c
 
-while True:
-    print (c.red + 'MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
- 
+try:
+  while True:
+      print (c.red + 'MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+except KeyboardInterrupt:
+  exit()
