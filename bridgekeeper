@@ -6,11 +6,18 @@ Who would cross the Bridge of Death
 Must answer me these questions three
 'Ere the other side he see
 ''' + c.reset)
+
 def ask(question):
     print(c.red + question + c.reset)
     name = input('>' + c.base3).lower().strip()
     print(c.reset)
     return name
+
+def live():
+    print(c.green + 'You have survived!!!!!!' + c.reset)
+    
+def dead():
+    print(c.red + 'Game Over' + c.reset)
 
 name = ask('What is your name?')
 quest = ask("What is your quest?")
@@ -18,12 +25,22 @@ quest = ask("What is your quest?")
 if name in ['lancelot','galahad']:
     color = ask(c.blue + 'What is your favorite color?' + c.reset)
     if color in ['blue']:
-        print('You may pass!')
+        live()
     else:
-        print('Game Over')
+        dead()
 elif name in ['robin']:
     capitol = ask(c.blue + 'What is the capitol of Asseria!')
+    if capitol in['assur','ashur']:
+        live()
+    else:
+        dead()
 if name in ['arthur']:
     swallow = ask(c.orange + 'What is the air speed, velocity, of an unladen swallow?')
-
-
+    if swallow in ['24 miles']:
+        live()
+    elif 'european' in swallow and 'african' in swallow:
+        print('NO, you have killed me!!!!!!!!!!!!!!')
+        live()
+    else:
+        dead()
+        
