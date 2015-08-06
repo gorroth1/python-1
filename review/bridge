@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.blue + '''Weclome to the bridge of death,
+to past you must answer me theese questions three!''' + c.reset)
+
+print(c.green + 'What is youre name?' + c.reset)
+answer = input('>')
+
+
+
+
+if answer == 'Lancelot' or answer == 'lancelot':
+    print('What is youre favorite color?')
+    color = input('>')
+    if color == 'Blue' or color == 'blue':
+        print('What is youre quest?')  
+    else:
+        print('You have died')
+    quest = input('>')
+    if quest == 'eessefd':
+        print('dsd')
+    else:
+        print('You have passed!')
+elif answer == 'Robin' or answer == 'robin':
+    print('What is the capitol of Asseria?')
+    asseria = input('>')
+    if asseria == 'Assur' or asseria == 'assur':
+        print('What is youre quest?')
+    else:
+        print('You suck at geography!')
+    pizza = input('>')
+elif answer == 'Galahad' or answer == 'galahad':
+    print('What is youre favorite color?')
+    nurple = input('>')
+    if nurple == 'Nurple' or nurple == 'nurple':
+        print('What is youre quest?')
+    else:
+        print('YOU HAVE FAILED! MISERABLEY!') 
+    ham = input('>')
+    if nurple == 'nurple' or nurple == 'nurple':
+        print('You have passed!')
+

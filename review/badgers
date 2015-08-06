@@ -1,4 +1,17 @@
 #!/usr/bin/env python3
-
 import colors as c 
-`
+import time
+
+print(c.clear)
+
+while True:
+    for count in range(4):    
+        for count in range (12):
+            time.sleep(0.375)
+            print(c.blue + 'Badgers')
+        for count in range (2):
+            time.sleep(0.475)
+            print(c.red + 'Mushroom')
+    time.sleep(1)
+    print(c.green + 'Thats because the SNAKE SNAKE ooh THE SNAKE!')
+    time.sleep(8)
