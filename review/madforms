@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import colors as c
+
+text == '''My Moustache
+
+So, you wanna know a little about my moustache? Well first off its {adjective1}
+and {adjective2}. Birds love {verb1} it. Some times it changes
+{adjective3} and other times it eats {noun1}. I don't judge it thoughe because
+its the best {adjective4} moustache I could ever have! 
+
+

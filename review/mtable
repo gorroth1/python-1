@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import sys
+
+print('What would you like to see the multiplicatio table of!')
+
+which = sys.argv[1]
+
+for n in range(12):
+    x = n * int(which)
+    print(n,' x ', which, ' = ', x)

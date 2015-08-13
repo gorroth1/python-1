@@ -39,6 +39,12 @@ elif answer == 'Galahad' or answer == 'galahad':
     else:
         print('YOU HAVE FAILED! MISERABLEY!') 
     ham = input('>')
-    if nurple == 'nurple' or nurple == 'nurple':
+    if nurple == 'nurple' or nurple == 'Nurple':
         print('You have passed!')
-
+elif answer == 'Arthur' or answer == 'arthur':
+    print('What is the air speed velocity of an unladen swallow?')
+    swallow = input('>')
+    if swallow == '10 mph':
+        print('You have killed the bridge keeper!')
+    else:
+        print('You died')
