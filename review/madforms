@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
 import colors as c
 
-text == '''My Moustache
+text = '''My Moustache
 
 So, you wanna know a little about my moustache? Well first off its {adjective1}
-and {adjective2}. Birds love {verb1} it. Some times it changes
-{adjective3} and other times it eats {noun1}. I don't judge it thoughe because
+and {adjective2}. Birds love {verb1} on it. Some times it changes
+{adjective3} and other times it eats {noun1}. I don't judge it though because
 its the best {adjective4} moustache I could ever have! 
+'''
 
+words = {
+    'adjective1': None,
+    'adjective2': None,
+    'verb1': None,
+    'adjective3': None,
+    'noun1': None,
+    'adjective4': None
+}
+
+for word in words:
+    print(word.rstrip("0123456789") + ':')
+    answer = input()
+    words[word] = c.rc() +  answer + c.reset
+
+print(text.format(**words))
 
